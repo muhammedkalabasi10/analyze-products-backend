@@ -19,7 +19,7 @@ const ProductSchema=mongoose.Schema({
             satisFiyat: Decimal128,
             buyboxFiyat: Decimal128,
             stok: Number,
-            KDV: Number,
+            KDVSatis: Number,
             desi: Number,
             gorsel1: String,
             gorsel2: String,
@@ -33,7 +33,9 @@ const ProductSchema=mongoose.Schema({
             sevkiyatTipi: String,
             durum: String,
             neYapmaliyim: String,
-            trendyolLinki: String
+            trendyolLinki: String,
+            alisFiyati: Decimal128,
+            KDVAlis: Number
         })
 
 const ProductModel=mongoose.model('product',ProductSchema)
